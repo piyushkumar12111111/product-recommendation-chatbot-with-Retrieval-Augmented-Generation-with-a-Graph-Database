@@ -3,10 +3,9 @@ from bs4 import BeautifulSoup
 import re
 import json
 
-# Load the spaCy model
+
 nlp = spacy.load("en_core_web_sm")
 
-# Load your HTML data (for demonstration, a string is used here)
 html_data = """
 <!DOCTYPE html>
 <html lang="en">
@@ -57,34 +56,31 @@ html_data = """
 </html>
 """
 
-# Parse the HTML data
 soup = BeautifulSoup(html_data, 'html.parser')
 
-# Extract the title
 title = soup.title.string if soup.title else 'No title found'
 
-# Extract meta description
+
 description = ''
 meta_description = soup.find('meta', attrs={'name': 'description'})
 if meta_description:
     description = meta_description.get('content', '')
 
-# Extract all text within the body tag (if body exists)
+
 body_text = ''
 if soup.body:
     body_text = soup.body.get_text(separator=' ', strip=True)
 
-# Further cleaning if necessary using regex
-clean_body_text = re.sub(r'\s+', ' ', body_text)  # Normalize whitespace
 
-# Process the body text using spaCy to find entities and relationships
+clean_body_text = re.sub(r'\s+', ' ', body_text)  
+
+
 doc = nlp(clean_body_text)
 
-# Create a dictionary with entities as keys and their descriptions as values
+
 extracted_data = {}
 
 for ent in doc.ents:
     extracted_data[ent.label_] = ent.text
 
-# Adding title and description to the dictionary
 extract
