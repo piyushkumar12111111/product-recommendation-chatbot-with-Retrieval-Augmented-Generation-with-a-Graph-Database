@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import re
 
-# Load your HTML data (for demonstration, a string is used here)
+
 html_data = """
 <!DOCTYPE html>
 <html lang="en">
@@ -51,34 +51,28 @@ html_data = """
 </html>
 """
 
-# Parse the HTML data
 soup = BeautifulSoup(html_data, 'html.parser')
 
-# Extract the title
+
 title = soup.title.string if soup.title else 'No title found'
 
-# Extract meta description
 description = ''
 meta_description = soup.find('meta', attrs={'name': 'description'})
 if meta_description:
     description = meta_description.get('content', '')
 
-# Extract all meta tags content
 meta_contents = {}
 for meta in soup.find_all('meta'):
     name = meta.get('name') or meta.get('property')
     if name:
         meta_contents[name] = meta.get('content', '')
 
-# Extract all text within the body tag (if body exists)
 body_text = ''
 if soup.body:
     body_text = soup.body.get_text(separator=' ', strip=True)
 
-# Further cleaning if necessary using regex
-clean_body_text = re.sub(r'\s+', ' ', body_text)  # Normalize whitespace
+clean_body_text = re.sub(r'\s+', ' ', body_text)  
 
-# Create a dictionary with the extracted data
 extracted_data = {
     'title': title,
     'description': description,
@@ -86,10 +80,10 @@ extracted_data = {
     'body_text': clean_body_text
 }
 
-# Print the dictionary to check the result
+
 print(extracted_data)
 
-# Optionally, convert dictionary to a more readable format if needed
+
 import json
 pretty_data = json.dumps(extracted_data, indent=4)
 print(pretty_data)
