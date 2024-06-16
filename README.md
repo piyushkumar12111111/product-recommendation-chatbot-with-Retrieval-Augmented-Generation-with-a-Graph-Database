@@ -3,7 +3,7 @@
 ## Table of Contents  
 - [Overview](#overview)
 - [Features](#features)
-- [Technologies Used](#technologies-used)
+- [Technologies Used](#technologies-used) 
 - [Architecture](#architecture)  
 - [Installation](#installation)
 - [Usage](#usage)
