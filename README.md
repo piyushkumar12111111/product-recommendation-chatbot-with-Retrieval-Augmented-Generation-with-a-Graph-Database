@@ -1,4 +1,4 @@
-# Product Recommendation Chatbot with Retrieval-Augmented Generation and Graph Database 
+# Product Recommendation Chatbot with Retrieval-Augmented Generation and Graph Database  
 
 ## Table of Contents
 - [Overview](#overview)
