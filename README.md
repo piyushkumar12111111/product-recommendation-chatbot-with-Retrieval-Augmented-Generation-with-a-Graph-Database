@@ -4,7 +4,7 @@
 - [Overview](#overview)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Architecture](#architecture)
+- [Architecture](#architecture) 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Configuration](#configuration)
