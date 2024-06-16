@@ -5,7 +5,7 @@
 - [Features](#features)
 - [Technologies Used](#technologies-used)  
 - [Architecture](#architecture)  
-- [Installation](#installation)  
+- [Installation](#installation)   
 - [Usage](#usage) 
 - [Configuration](#configuration)
 - [Contributing](#contributing)   
