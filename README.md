@@ -7,7 +7,7 @@
 - [Architecture](#architecture)   
 - [Installation](#installation)   
 - [Usage](#usage)  
-- [Configuration](#configuration)
+- [Configuration](#configuration) 
 - [Contributing](#contributing)    
 - [License](#license)  
 
