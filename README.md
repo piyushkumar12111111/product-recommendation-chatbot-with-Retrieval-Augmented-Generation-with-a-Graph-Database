@@ -6,7 +6,7 @@
 - [Technologies Used](#technologies-used)  
 - [Architecture](#architecture)   
 - [Installation](#installation)   
-- [Usage](#usage) 
+- [Usage](#usage)  
 - [Configuration](#configuration)
 - [Contributing](#contributing)    
 - [License](#license)  
