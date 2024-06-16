@@ -8,7 +8,7 @@
 - [Installation](#installation)  
 - [Usage](#usage) 
 - [Configuration](#configuration)
-- [Contributing](#contributing) 
+- [Contributing](#contributing)  
 - [License](#license) 
 
 ## Overview
