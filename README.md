@@ -9,7 +9,7 @@
 - [Usage](#usage) 
 - [Configuration](#configuration)
 - [Contributing](#contributing)   
-- [License](#license) 
+- [License](#license)  
 
 ## Overview
 The Product Recommendation Chatbot is a sophisticated system that leverages Retrieval-Augmented Generation (RAG) to provide users with personalized product recommendations. By integrating a Graph Database, the chatbot can efficiently retrieve relevant product data and enhance the recommendation process with contextual understanding.
